@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="RO’Lyfe Vision Hub™ — real estate strategy, funding education, AI systems, and wealth-building resources.">
+<meta name="theme-color" content="#07110d">
+<title>RO’Lyfe Vision Hub™</title>
+<style>
+:root{--bg:#07110d;--panel:#0f1c15;--green:#28e070;--mint:#91ffb8;--text:#fff;--muted:#c0d8c8;--line:rgba(145,255,184,.22)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--mint)}
+.wrap{width:min(1150px,100%);margin:auto;padding:18px}
+.hero{min-height:86vh;background:radial-gradient(circle at 50% 25%,#173b29 0,#0a1a11 42%,#06100b 100%);display:grid;place-items:center;text-align:center;padding:30px 15px}
+.card{width:min(850px,100%);background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,5vw,42px);box-shadow:0 0 35px rgba(0,255,120,.09)}
+.logo{font-size:clamp(30px,6vw,44px);font-weight:900;letter-spacing:.04em;color:var(--mint)}
+h1{font-size:clamp(32px,6vw,46px);margin:12px 0}
+h2{font-size:clamp(23px,4vw,30px)}
+p{color:#d7ffe3;line-height:1.65}
+.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:22px}
+a.btn,button{display:inline-block;border:0;border-radius:14px;padding:14px 18px;font-weight:700;text-decoration:none;cursor:pointer;font-size:15px}
+.primary{background:var(--green);color:#06110d}
+.secondary{background:#17251d;color:#fff;border:1px solid var(--green)!important}
+.section{padding:30px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px}
+.box{background:var(--panel);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:20px}
+.box h3{margin-top:0}
+input{width:100%;padding:15px;border-radius:12px;border:1px solid #2ce87b;background:#06110d;color:#fff;margin:8px 0;font-size:16px}
+input::placeholder{color:#a8cbb5}
+.small{font-size:13px;color:#a8cbb5}
+footer{text-align:center;padding:25px;color:#9fc9ad;border-top:1px solid rgba(255,255,255,.08)}
+.notice{font-size:13px;color:#a8cbb5}
+@media(max-width:520px){.wrap{padding:12px}.hero{min-height:78vh}.box{padding:16px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="card">
+    <div class="logo">RO’LYFE</div>
+    <h1>Vision Hub™</h1>
+    <p><strong>Watch • Learn • Execute</strong></p>
+    <p>Real estate strategy, funding education, AI systems, and practical resources for people building with purpose.</p>
+    <div class="btns">
+      <a class="btn primary" href="#email">Get Updates</a>
+      <a class="btn secondary" href="#videos">Explore Library</a>
+      <a class="btn secondary" href="https://rolrichman.github.io/rolyfe-property-research-intelligence/">Property Research</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section" id="videos">
+  <div class="wrap">
+    <h2>🎥 Featured Learning Library</h2>
+    <p>Explore the topics covered by RO’Lyfe. Add your selected video embeds or curated video links to these sections as they become available.</p>
+    <div class="grid">
+      <article class="box">
+        <h3>🏠 Real Estate Strategy</h3>
+        <p>Wholesaling, seller finance, assignments, title awareness, contractor coordination, and closing preparation.</p>
+      </article>
+      <article class="box">
+        <h3>💰 Funding Education</h3>
+        <p>Private money, hard money, business credit, investor preparation, and lender-packet education.</p>
+      </article>
+      <article class="box">
+        <h3>🤖 AI & Systems</h3>
+        <p>Automation, AI assistants, CRM tools, funnels, and business operating systems.</p>
+      </article>
+      <article class="box">
+        <h3>🧠 Wealth Mindset</h3>
+        <p>Execution, discipline, leadership, decision-making, and long-term business vision.</p>
+      </article>
+    </div>
+    <p class="notice">This page is a learning hub. The topic cards are not video players until you add video URLs or embed codes.</p>
+  </div>
+</section>
+
+<section class="section" id="email">
+  <div class="wrap">
+    <div class="box">
+      <h2>📩 Get RO’Lyfe Vision Hub Updates</h2>
+      <p>Request information about new videos, funding education, real estate resources, and execution tools.</p>
+      <form action="mailto:richmoneybroker@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Full name</label>
+        <input id="name" type="text" name="Name" placeholder="Full Name" autocomplete="name" required>
+        <label for="email-address">Email address</label>
+        <input id="email-address" type="email" name="Email" placeholder="Email Address" autocomplete="email" required>
+        <label for="role">Your role (optional)</label>
+        <input id="role" type="text" name="Role" placeholder="Investor, Contractor, Realtor, Lender">
+        <button class="primary" type="submit">Request Information</button>
+      </form>
+      <p class="small">Built by Richardson L. | Root Of Lyfe LLC</p>
+      <p class="notice">Submitting opens your device's configured email application. This form does not store submissions on the website.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer>RO’Lyfe Vision Hub™ © 2026 | Watch • Learn • Execute</footer>
+</body>
+</html>
