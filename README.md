@@ -1,48 +1,34 @@
-# 🎥 RO’Lyfe Video Hub
+# RO’Lyfe Vision Hub™
 
-RO’Lyfe Video Hub is a branded video education and execution library built for daily insights, funding strategy, real estate education, AI updates, business growth, and investor mindset.
+RO’Lyfe Vision Hub is a mobile-first learning destination for real estate strategy, funding education, business systems, AI, sports-history discovery, and wealth-building topics.
 
-## Purpose
+## Live website
 
-This hub gives visitors one place to watch selected videos, review opportunities, access RO’Lyfe systems, and connect with Jamal AI for guidance.
+https://rolrichman.github.io/rolyfe-video-hub/
 
-## Main Features
+## Current features
 
-- Featured daily videos
-- Dropdown video library
-- AI and business education
-- Real estate strategy videos
-- Funding and credit education
-- Jamal AI access
-- RO’Lyfe Secure Access link
-- Contractor / investor education
-- Systeme.io embed-ready layout
+- Featured embedded lesson: **SBA Loan Programs and How to Apply**, from Cal Poly CIE / Small Business Development Center (June 11, 2024). The session description identifies an SBA lender-relations specialist as the speaker.
+- Topic-specific YouTube search shortcuts for property research, funding, investing, sports archives, and AI / business systems.
+- **My Shelf**: visitors can add a YouTube watch URL, youtu.be URL, Shorts URL, embed URL, or 11-character video ID; assign a category; play the video in the embedded player; and remove it from their list.
+- Responsive player layout for phones, tablets, and desktop.
+- The original YouTube link remains available if an uploader has disabled embedding.
 
-## Flow
+## Data and integration boundaries
 
-Watch → Learn → React → Analyze → Execute
+- My Shelf stores up to 30 entries in the current browser's localStorage. It is per-device / per-browser and does not sync to other devices or visitors.
+- Topic search shortcuts open YouTube search results; they are discovery links, not a curated playlist or endorsement of each search result.
+- The site does not currently include a server-backed public video catalog, YouTube Data API, personal accounts, or cross-device watch history.
+- No live conversational Jamal / Atlas integration is claimed on this page.
+- Do not embed copyrighted video files directly. Use the original platform's authorized embed player or link to the source.
 
-## Built For
+## Project direction
 
-- Entrepreneurs
-- Real estate investors
-- Contractors
-- Affiliate marketers
-- Funding partners
-- Business owners
-- RO’Lyfe community
+1. Curate a public RO’Lyfe playlist with selected videos and source notes.
+2. Add a server-backed catalog only after choosing a data model, access rules, and moderation approach.
+3. Expand the learning tracks: Property Research, Funding, Trading, Sports & History, and AI & Systems.
+4. Add original RO’Lyfe lessons and branded walkthroughs as they are produced.
 
-## Connected Systems
+## Run / publish
 
-- RO’Lyfe Secure Access
-- RO’Lyfe Funding Hub
-- RO’Lyfe Acquisition Engine
-- Jamal AI
-- Contract & Document Hub
-
-## Built By
-
-Richardson L.  
-RO’Lyfe Holdings LLC  
-Private Capital Broker  
-richman@rootoflyfe.com
+This is a static GitHub Pages site. The root `index.html` is the public entry point.
