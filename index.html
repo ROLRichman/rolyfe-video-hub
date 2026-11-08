@@ -33,6 +33,8 @@ input::placeholder{color:#a8cbb5}
 footer{text-align:center;padding:25px;color:#9fc9ad;border-top:1px solid rgba(255,255,255,.08)}
 .notice{font-size:13px;color:#a8cbb5}
 @media(max-width:520px){.wrap{padding:12px}.hero{min-height:78vh}.box{padding:16px}}
+
+.video-library{margin-top:20px}.video-feature{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}.video-player{position:relative;width:100%;aspect-ratio:16/9;border-radius:15px;overflow:hidden;background:#020805;border:1px solid var(--line)}.video-player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.video-meta{padding:6px 2px}.video-meta h3{font-size:20px;margin:0 0 7px}.source-line{font-size:12px;color:var(--mint)}.video-tools{display:grid;gap:10px}.video-search-card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:16px}.video-search-card h3{margin:0 0 6px}.video-search-card p{font-size:13px;margin:0 0 12px}.video-search-card button{width:100%;background:#183326;color:#dfffe9;border:1px solid #39774f}.add-video{display:grid;grid-template-columns:1.2fr .7fr .7fr auto;gap:9px;align-items:end}.add-video label{display:block;color:var(--mint);font-size:12px;font-weight:800}.add-video input,.add-video select{margin-top:5px}.add-video button{background:var(--green);color:#06110d;min-height:46px}.saved-videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px;margin-top:14px}.saved-video{background:#0b1b12;border:1px solid var(--line);border-radius:13px;padding:14px;display:flex;flex-direction:column;gap:8px}.saved-video h4{margin:0;font-size:14px}.saved-video small{color:var(--mint)}.saved-video-actions{display:flex;gap:8px;margin-top:auto}.saved-video-actions button{flex:1;padding:9px 11px;font-size:12px}.saved-video-actions .watch{background:#1e713a;color:#fff}.saved-video-actions .remove{background:#38201d;color:#ffd9cd;border:1px solid #86584d}.empty-shelf{border:1px dashed #3b6849;border-radius:13px;padding:20px;text-align:center;color:#a8cbb5;font-size:13px}.library-note{font-size:11px;color:#95b6a2;line-height:1.5;margin-top:12px}.video-status{min-height:20px;color:var(--mint);font-size:12px;margin:8px 0}@media(max-width:760px){.video-feature{grid-template-columns:1fr}.add-video{grid-template-columns:1fr 1fr}.add-video label:first-child{grid-column:1/-1}.add-video button{grid-column:1/-1}}
 </style>
 </head>
 <body>
@@ -44,6 +46,7 @@ footer{text-align:center;padding:25px;color:#9fc9ad;border-top:1px solid rgba(25
     <p>Real estate strategy, funding education, AI systems, and practical resources for people building with purpose.</p>
     <div class="btns">
       <a class="btn primary" href="#email">Get Updates</a>
+      <a class="btn secondary" href="#watch-library">Watch Videos</a>
       <a class="btn secondary" href="#videos">Explore Library</a>
       <a class="btn secondary" href="https://rolrichman.github.io/rolyfe-property-research-intelligence/">Property Research</a>
     </div>
@@ -77,6 +80,39 @@ footer{text-align:center;padding:25px;color:#9fc9ad;border-top:1px solid rgba(25
   </div>
 </section>
 
+<section class="section video-library" id="watch-library">
+  <div class="wrap">
+    <div class="eyebrow">WATCH · LEARN · APPLY</div>
+    <h2>▶ RO’Lyfe Video Library</h2>
+    <p>Start with a sourced funding lesson, explore topic-specific video searches, and build a personal shelf from YouTube links you choose.</p>
+    <div class="video-feature">
+      <div>
+        <div class="video-player"><iframe id="featuredPlayer" src="https://www.youtube-nocookie.com/embed/cY779wUf4TU?rel=0" title="SBA Loan Programs and How to Apply — Cal Poly CIE Small Business Development Center" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="video-meta"><h3 id="featuredTitle">SBA Loan Programs and How to Apply</h3><div class="source-line">Cal Poly CIE · Small Business Development Center · June 11, 2024</div><p>Workshop with an SBA lender-relations specialist covering 7(a), 504, and Microloan program basics. This is educational material, not a funding offer or approval.</p><a href="https://www.youtube.com/watch?v=cY779wUf4TU" target="_blank" rel="noopener noreferrer">Open original video on YouTube ↗</a></div>
+      </div>
+      <div class="video-tools">
+        <article class="video-search-card"><h3>🏠 Property Research</h3><p>Learn parcel research, assessor records, due diligence, title basics, and auction preparation.</p><button type="button" data-video-search="property due diligence parcel assessor GIS public records title research tutorial">Explore property videos ↗</button></article>
+        <article class="video-search-card"><h3>💰 Funding &amp; Business</h3><p>Explore SBA program education, business planning, lender preparation, and credit fundamentals.</p><button type="button" data-video-search="SBA small business loan programs lender preparation business planning education">Explore funding videos ↗</button></article>
+        <article class="video-search-card"><h3>📈 Trading &amp; Investing</h3><p>Find beginner-friendly explanations of market structure, risk, diversification, and investing basics.</p><button type="button" data-video-search="Investor.gov investing basics diversification risk SEC education">Explore investing videos ↗</button></article>
+        <article class="video-search-card"><h3>⚽ Sports &amp; History</h3><p>Discover football archives, match history, tactical breakdowns, and sports documentaries.</p><button type="button" data-video-search="Haiti national football team 1974 1975 historic football archive highlights">Explore sports archives ↗</button></article>
+        <article class="video-search-card"><h3>🤖 AI &amp; Systems</h3><p>Explore practical automation, AI assistants, workflow design, and small-business systems.</p><button type="button" data-video-search="small business AI automation workflows CRM practical tutorial">Explore AI &amp; systems videos ↗</button></article>
+      </div>
+    </div>
+    <div class="box" style="margin-top:22px">
+      <h3>＋ Add a YouTube video to My Shelf</h3>
+      <form id="videoAddForm" class="add-video">
+        <label>Video URL or ID<input id="videoUrl" type="text" inputmode="url" placeholder="Paste a YouTube link or 11-character video ID" aria-label="YouTube video URL"></label>
+        <label>Video title<input id="videoTitle" type="text" maxlength="90" placeholder="Give it a title" required></label>
+        <label>Category<select id="videoCategory"><option>Real Estate</option><option>Funding</option><option>Trading</option><option>Sports</option><option>AI &amp; Systems</option><option>Other</option></select></label>
+        <button type="submit">Add to shelf</button>
+      </form>
+      <p id="videoStatus" class="video-status" aria-live="polite"></p>
+      <div id="savedVideos" class="saved-videos"><div class="empty-shelf">Your personal shelf is empty. Paste a YouTube link above to add a video.</div></div>
+      <p class="library-note">My Shelf saves up to 30 video links in this browser on this device only. It does not publish them for other visitors or sync across devices. Videos play through YouTube’s embedded player; some creators may restrict embedding, so the original YouTube link remains available.</p>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="email">
   <div class="wrap">
     <div class="box">
@@ -98,5 +134,59 @@ footer{text-align:center;padding:25px;color:#9fc9ad;border-top:1px solid rgba(25
 </section>
 </main>
 <footer>RO’Lyfe Vision Hub™ © 2026 | Watch • Learn • Execute</footer>
+<script id="rol-vision-video-library">
+(function(){
+"use strict";
+const KEY="rolyfe_vision_video_shelf_v1";
+const $=id=>document.getElementById(id);
+let saved=[];
+function parseVideoId(raw){
+ const value=String(raw||"").trim();
+ if(/^[A-Za-z0-9_-]{11}$/.test(value))return value;
+ try{
+  const u=new URL(value);
+  const host=u.hostname.toLowerCase().replace(/^www\./,"");
+  if(host==="youtu.be")return (u.pathname.split("/").filter(Boolean)[0]||"").match(/^[A-Za-z0-9_-]{11}$/)?.[0]||"";
+  if(host==="youtube.com"||host==="m.youtube.com"||host==="youtube-nocookie.com"){
+   const path=u.pathname.split("/").filter(Boolean);
+   const id=u.searchParams.get("v")||(path[0]==="embed"||path[0]==="shorts"?path[1]:"");
+   return /^[A-Za-z0-9_-]{11}$/.test(id||"")?id:"";
+  }
+ }catch(e){}
+ return "";
+}
+function setStatus(message,isError){$("videoStatus").textContent=message;$("videoStatus").style.color=isError?"#ff9c8d":"var(--mint)"}
+function readSaved(){try{const raw=localStorage.getItem(KEY);saved=raw?JSON.parse(raw):[];if(!Array.isArray(saved))saved=[]}catch(e){saved=[];setStatus("Browser storage is unavailable. Videos can still be opened, but your shelf may not persist.",true)}}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(saved.slice(0,30)));return true}catch(e){setStatus("Could not save in this browser. Try removing older saved entries or allow site storage.",true);return false}}
+function playVideo(video){$("featuredTitle").textContent=video.title;$("featuredPlayer").src="https://www.youtube-nocookie.com/embed/"+video.id+"?rel=0";$("featuredPlayer").title=video.title;$("featuredPlayer").scrollIntoView({behavior:"smooth",block:"center"});setStatus("Now playing: "+video.title,false)}
+function render(){
+ const root=$("savedVideos");root.replaceChildren();
+ if(!saved.length){const empty=document.createElement("div");empty.className="empty-shelf";empty.textContent="Your personal shelf is empty. Paste a YouTube link above to add a video.";root.appendChild(empty);return}
+ saved.forEach((video,index)=>{
+  const card=document.createElement("article");card.className="saved-video";
+  const title=document.createElement("h4");title.textContent=video.title;
+  const meta=document.createElement("small");meta.textContent=video.category+" · YouTube";
+  const actions=document.createElement("div");actions.className="saved-video-actions";
+  const watch=document.createElement("button");watch.type="button";watch.className="watch";watch.textContent="▶ Watch";watch.addEventListener("click",()=>playVideo(video));
+  const remove=document.createElement("button");remove.type="button";remove.className="remove";remove.textContent="Remove";remove.addEventListener("click",()=>{saved.splice(index,1);persist();render();setStatus("Video removed from this device’s shelf.",false)});
+  actions.append(watch,remove);card.append(title,meta,actions);root.appendChild(card)
+ })
+}
+$("videoAddForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const raw=$("videoUrl").value.trim(),id=parseVideoId(raw),title=$("videoTitle").value.trim(),category=$("videoCategory").value;
+ if(!id){setStatus("That link was not recognized. Use a YouTube watch, youtu.be, Shorts or embed URL.",true);return}
+ if(!title){setStatus("Add a short title for this video.",true);return}
+ if(saved.some(v=>v.id===id)){setStatus("That video is already on your shelf.",true);return}
+ saved.unshift({id,title,category,addedAt:new Date().toISOString()});saved=saved.slice(0,30);
+ if(persist()){render();e.target.reset();setStatus("Added to My Shelf on this device.",false)}
+});
+document.querySelectorAll("[data-video-search]").forEach(button=>button.addEventListener("click",()=>{
+ const query=button.getAttribute("data-video-search")||"";
+ window.open("https://www.youtube.com/results?search_query="+encodeURIComponent(query),"_blank","noopener,noreferrer");
+}));
+readSaved();render();
+})();
+</script>
 </body>
 </html>
